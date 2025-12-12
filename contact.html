@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7th Heaven Hemp</title>
+    <link rel="stylesheet" href="Assets/css/style.css"/>
+</head>
+<body>
+     <header class="site-header">
+      <div class="header-inner">
+    <a href="#top" class="logo-area">
+  <!-- Your logo image -->
+  <img
+    src="./Assets/images/logomain.jpg"
+    alt="7th Heaven logo"
+    class="logo-img"
+  />
+</a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="contact.html">Contact</a>
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="labreports.html">COA's</a>
+        </nav>
+
+        <div class="nav-cta">
+          <button class="btn btn-outline">Find Products</button>
+          <button class="btn btn-primary">Contact Us</button>
+        </div>
+
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <span class="menu-line"></span>
+        </button>
+      </div>
+
+      <!-- Mobile nav -->
+      <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-inner">
+          <div class="mobile-nav-links">
+            <a href="#doobies">Doobies</a>
+            <a href="#prerolls">Prerolls</a>
+            <a href="#gummies">Gummies</a>
+            <a href="#flowers">Flowers</a>
+            <a href="#keif">Keif Pouches</a>
+            <a href="#donuts">Donut Pouches</a>
+          </div>
+          <div class="mobile-nav-cta">
+            <button class="btn btn-outline" style="flex:1;">Find a Store</button>
+            <button class="btn btn-primary" style="flex:1;">Join the Club</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+
+    <script>
+    // Mobile nav toggle
+    const menuToggle = document.querySelector(".menu-toggle");
+    const mobileNav = document.getElementById("mobileNav");
+
+    menuToggle.addEventListener("click", () => {
+      mobileNav.classList.toggle("open");
+    });
+
+    // Close mobile nav on link click
+    mobileNav.addEventListener("click", (e) => {
+      if (e.target.tagName === "A") {
+        mobileNav.classList.remove("open");
+      }
+    });
+  </script>
+</body>
+</html>
