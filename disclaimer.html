@@ -1,76 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>7th Heaven Hemp</title>
-    <link rel="stylesheet" href="Assets/css/style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disclaimer | 7th Heaven Hemp</title>
+
+  <link rel="stylesheet" href="Assets/css/style.css"/>
+
+   <!-- Optional Google Font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amarna:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+
+  <style>
+    .disclaimer-page{
+      padding:5% 6%;
+      max-width:900px;
+      margin:0 auto;
+    }
+
+    .disclaimer-title{
+      font-size:clamp(1.8rem, 3.5vw, 2.4rem);
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      margin-bottom:2rem;
+    }
+
+    .disclaimer-content p{
+      margin-bottom:1.4rem;
+      font-size:.95rem;
+      line-height:1.7;
+      color:#333;
+    }
+
+    .disclaimer-content strong{
+      display:block;
+      margin-bottom:.35rem;
+      font-weight:600;
+    }
+
+    .disclaimer-footer{
+      margin-top:3rem;
+      font-size:.85rem;
+      color:#666;
+    }
+  </style>
 </head>
+
 <body>
-     <header class="site-header">
-      <div class="header-inner">
-    <a href="#top" class="logo-area">
-  <!-- Your logo image -->
-  <img
-    src="./Assets/images/logomain.jpg"
-    alt="7th Heaven logo"
-    class="logo-img"
-  />
-</a>
-        <nav class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="contact.html">Contact</a>
-          <a href="disclaimer.html">Disclaimer</a>
-          <a href="labreports.html">COA's</a>
-        </nav>
 
-        <div class="nav-cta">
-          <button class="btn btn-outline">Find Products</button>
-          <button class="btn btn-primary">Contact Us</button>
-        </div>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo-area">
+      <img src="./Assets/images/logomain.jpg" alt="7th Heaven logo" class="logo-img"/>
+    </a>
 
-        <button class="menu-toggle" aria-label="Toggle navigation">
-          <span class="menu-line"></span>
-        </button>
-      </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="disclaimer.html" class="active">Disclaimer</a>
+      <a href="labreports.html">COA's</a>
+    </nav>
 
-      <!-- Mobile nav -->
-      <div class="mobile-nav" id="mobileNav">
-        <div class="mobile-nav-inner">
-          <div class="mobile-nav-links">
-            <a href="#doobies">Doobies</a>
-            <a href="#prerolls">Prerolls</a>
-            <a href="#gummies">Gummies</a>
-            <a href="#flowers">Flowers</a>
-            <a href="#keif">Keif Pouches</a>
-            <a href="#donuts">Donut Pouches</a>
-          </div>
-          <div class="mobile-nav-cta">
-            <button class="btn btn-outline" style="flex:1;">Find a Store</button>
-            <button class="btn btn-primary" style="flex:1;">Join the Club</button>
-          </div>
-        </div>
-      </div>
-    </header>
+    <div class="nav-cta">
+      <button class="btn btn-outline">Find Products</button>
+      <button class="btn btn-primary">Contact Us</button>
+    </div>
 
+    <button class="menu-toggle" aria-label="Toggle navigation">
+      <span class="menu-line"></span>
+    </button>
+  </div>
+</header>
 
+<section class="disclaimer-page">
+  <h1 class="disclaimer-title">Legal Disclaimer</h1>
 
+  <div class="disclaimer-content">
+    <p>
+      <strong>No Medical Claims:</strong>
+      These statements have not been evaluated by the Food and Drug Administration.
+      This product is not intended to diagnose, treat, cure, or prevent any disease.
+      The information on this site is for educational purposes only and should not be
+      considered medical advice.
+    </p>
 
-    <script>
-    // Mobile nav toggle
-    const menuToggle = document.querySelector(".menu-toggle");
-    const mobileNav = document.getElementById("mobileNav");
+    <p>
+      <strong>Product Quality Assurance:</strong>
+      Quality Commitment: At tysonhemp, we are committed to providing high-quality,
+      lab-tested products. Every batch is screened for purity and potency to ensure
+      consistency and efficacy.
+    </p>
 
-    menuToggle.addEventListener("click", () => {
-      mobileNav.classList.toggle("open");
-    });
+    <p>
+      <strong>Acknowledgement of Risk:</strong>
+      Assumption of Risks: By purchasing and using these products, you acknowledge
+      the inherent risks associated with using THC products and agree to assume full
+      responsibility for any effects or legal issues that may arise.
+    </p>
+  </div>
 
-    // Close mobile nav on link click
-    mobileNav.addEventListener("click", (e) => {
-      if (e.target.tagName === "A") {
-        mobileNav.classList.remove("open");
-      }
-    });
-  </script>
+  <div class="disclaimer-footer">
+    Copyright © 2025 | All Rights Reserved By 7th Heaven Hemp
+  </div>
+</section>
+
+<script>
+  const menuToggle = document.querySelector(".menu-toggle");
+  const mobileNav = document.getElementById("mobileNav");
+  if(menuToggle && mobileNav){
+    menuToggle.addEventListener("click",()=>mobileNav.classList.toggle("open"));
+  }
+</script>
+
 </body>
 </html>
