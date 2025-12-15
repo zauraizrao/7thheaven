@@ -1,584 +1,2081 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>7th Heaven – Products</title>
-  <link rel="stylesheet" href="Assets/css/style.css"/>
-  <link rel="stylesheet" href="Assets/css/products.css"/>
-   <!-- Optional Google Font -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amarna:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7th Heaven – Products</title>
+    <link rel="stylesheet" href="Assets/css/style.css" />
+    <link rel="stylesheet" href="Assets/css/products.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amarna:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="logo-area">
+          <img
+            src="./Assets/images/logomain.jpg"
+            alt="7th Heaven logo"
+            class="logo-img"
+          />
+        </a>
 
-<body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="index.html" class="logo-area">
-        <img src="./Assets/images/logomain.jpg" alt="7th Heaven logo" class="logo-img" />
-      </a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="contact.html">Contact</a>
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="labreports.html">COA's</a>
+        </nav>
 
-      <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="disclaimer.html">Disclaimer</a>
-        <a href="labreports.html">COA's</a>
-      </nav>
-
-      <div class="nav-cta">
-        <button class="btn btn-outline" type="button" onclick="location.href='products.html'">Find Products</button>
-        <button class="btn btn-primary" type="button" onclick="location.href='contact.html'">Contact Us</button>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <span class="menu-line"></span>
+        </button>
       </div>
 
-      <button class="menu-toggle" aria-label="Toggle navigation">
-        <span class="menu-line"></span>
-      </button>
-    </div>
-
-    <div class="mobile-nav" id="mobileNav">
-      <div class="mobile-nav-inner">
-        <div class="mobile-nav-links">
-          <a href="#prerolls">Prerolls</a>
-          <a href="#gummies">Gummies</a>
-          <a href="#keif">Keif Pouches</a>
-          <a href="#donuts">Donuts</a>
-          <a href="#flowers">Flowers</a>
-        </div>
-        <div class="mobile-nav-cta">
-          <button class="btn btn-outline" style="flex:1;" type="button" onclick="location.href='products.html'">Find Products</button>
-          <button class="btn btn-primary" style="flex:1;" type="button" onclick="location.href='contact.html'">Contact Us</button>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main class="products-page" id="top">
-    <!-- HERO -->
-    <section class="products-hero">
-      <div class="products-hero-inner">
-        <div class="products-hero-copy">
-          <div class="products-hero-badge">Shop • 7th Heaven Collection</div>
-          <h1 class="products-hero-title">
-            Products <span class="products-hero-gold">Line-Up</span>
-          </h1>
-          <p class="products-hero-text">
-            Choose a category, then pick Sativa / Hybrid / Indica. Replace images + titles anytime.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- TABS WRAP -->
-    <section class="products-section">
-      <div class="section-inner">
-        <div class="tabs-wrap">
-
-          <!-- TOP TABS -->
-          <div class="tabs" role="tablist" aria-label="Product Categories">
-            <button class="tab-btn is-active" role="tab" aria-selected="true" data-tab="tab-prerolls">Prerolls</button>
-            <button class="tab-btn" role="tab" aria-selected="false" data-tab="tab-gummies">Gummies</button>
-            <button class="tab-btn" role="tab" aria-selected="false" data-tab="tab-keif">Keif Pouches</button>
-            <button class="tab-btn" role="tab" aria-selected="false" data-tab="tab-donuts">Donuts</button>
-            <button class="tab-btn" role="tab" aria-selected="false" data-tab="tab-flowers">Flowers</button>
+      <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-inner">
+          <div class="mobile-nav-links">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="labreports.html">COA's</a>
+            <a href="disclaimer.html">Disclaimer</a>
           </div>
+          <!-- <div class="mobile-nav-cta">
+            <button class="btn btn-outline" style="flex:1;">Find a Store</button>
+            <button class="btn btn-primary" style="flex:1;">Join the Club</button>
+          </div> -->
+        </div>
+      </div>
+    </header>
 
-          <!-- ===================== PREROLLS ===================== -->
-          <section class="tab-panel is-active" id="tab-prerolls" role="tabpanel">
-            <div class="panel-head" id="prerolls">
-              <div>
-                <div class="panel-eyebrow">Category</div>
-                <h2 class="panel-title">Prerolls</h2>
-              </div>
+    <main class="products-page" id="top">
+      <!-- HERO -->
+      <section class="products-hero">
+        <div class="products-hero-inner">
+          <div class="products-hero-copy">
+            <div class="products-hero-badge">Shop • 7th Heaven Collection</div>
+            <h1 class="products-hero-title">
+              Products <span class="products-hero-gold">Line-Up</span>
+            </h1>
+          </div>
+        </div>
+      </section>
+
+      <!-- TABS WRAP -->
+      <section class="products-section">
+        <div class="section-inner">
+          <div class="tabs-wrap">
+            <!-- TOP TABS -->
+            <div class="tabs" role="tablist" aria-label="Product Categories">
+              <button
+                class="tab-btn is-active"
+                role="tab"
+                aria-selected="true"
+                data-tab="tab-prerolls"
+              >
+                Prerolls
+              </button>
+              <button
+                class="tab-btn"
+                role="tab"
+                aria-selected="false"
+                data-tab="tab-gummies"
+              >
+                Gummies
+              </button>
+              <button
+                class="tab-btn"
+                role="tab"
+                aria-selected="false"
+                data-tab="tab-keif"
+              >
+                Keif Pouches
+              </button>
+              <button
+                class="tab-btn"
+                role="tab"
+                aria-selected="false"
+                data-tab="tab-donuts"
+              >
+                Donuts
+              </button>
+              <button
+                class="tab-btn"
+                role="tab"
+                aria-selected="false"
+                data-tab="tab-flowers"
+              >
+                Flowers
+              </button>
             </div>
 
-            <div class="subtabs" role="tablist" aria-label="Prerolls Types">
-              <button class="subtab-btn is-active" role="tab" aria-selected="true" data-subtab="prerolls-sativa">Sativa</button>
-              <button class="subtab-btn" role="tab" aria-selected="false" data-subtab="prerolls-hybrid">Hybrid</button>
-              <button class="subtab-btn" role="tab" aria-selected="false" data-subtab="prerolls-indica">Indica</button>
-            </div>
-
-            <!-- ===================== PREROLLS: SATIVA ===================== -->
-            <div class="subtab-panel is-active" id="prerolls-sativa">
-              <div class="product-grid product-grid-8">
-                <div class="product-card-block">
-                  <article class="product-card product-card--products">
-                    <div class="product-media"><div class="product-media-inner">
-                      <img src="./Assets/images/PreRolls/preroll packet 1 sativa.png" alt="Prerolls Sativa 1">
-                    </div></div>
-                    <div class="product-body">
-                      <h3 class="product-title">Sativa Preroll 3x2 Gram</h3>
-                      <div class="product-meta"><span class="product-pill">Durban Poison</span><span>Sativa</span></div>
-                    </div>
-                  </article>
-
-                  <article class="product-card product-card--products">
-                    <div class="product-media"><div class="product-media-inner">
-                      <img src="./Assets/images/PreRolls/preroll packet 2 sativa.png" alt="Prerolls Sativa 2">
-                    </div></div>
-                    <div class="product-body">
-                      <h3 class="product-title">Sativa Preroll 3x2 Gram</h3>
-                      <div class="product-meta"><span class="product-pill">Forbidden Fruit</span><span>Sativa</span></div>
-                    </div>
-                  </article>
-
-                  <article class="product-card product-card--products">
-                    <div class="product-media"><div class="product-media-inner">
-                      <img src="./Assets/images/PreRolls/prerolls box  sativa.png" alt="Prerolls Sativa 3">
-                    </div></div>
-                    <div class="product-body">
-                      <h3 class="product-title">PreRolls Box 10 Count with Pouch</h3>
-                      <div class="product-meta"><span class="product-pill">Durban Poison</span><span>2gram</span></div>
-                    </div>
-                  </article>
-
-                  <article class="product-card product-card--products">
-                    <div class="product-media"><div class="product-media-inner">
-                      <img src="./Assets/images/PreRolls/prerolls box sativa 2.png" alt="Prerolls Sativa 4">
-                    </div></div>
-                    <div class="product-body">
-                      <h3 class="product-title">PreRolls Box 10 Count with Pouch</h3>
-                      <div class="product-meta"><span class="product-pill">Forbidden Fruit</span><span>2gram</span></div>
-                    </div>
-                  </article>
-
-                  <article class="product-card product-card--products">
-                    <div class="product-media"><div class="product-media-inner">
-                      <img src="./Assets/images/PreRolls/prerollsbox satva 3.png" alt="Prerolls Sativa 5">
-                    </div></div>
-                    <div class="product-body">
-                      <h3 class="product-title">PreRolls Box 10 Count</h3>
-                      <div class="product-meta"><span class="product-pill">Forbidden Fruit</span><span>2gram</span></div>
-                    </div>
-                  </article>
-
-                  <article class="product-card product-card--products">
-                    <div class="product-media"><div class="product-media-inner">
-                      <img src="./Assets/images/PreRolls/prerolls sativa box 3.png" alt="Prerolls Sativa 6">
-                    </div></div>
-                    <div class="product-body">
-                      <h3 class="product-title">PreRolls Box 10 Count</h3>
-                      <div class="product-meta"><span class="product-pill">Durban Poison</span><span>2gram</span></div>
-                    </div>
-                  </article>
-<!-- 
-                  <article class="product-card product-card--products">
-                    <div class="product-media"><div class="product-media-inner">
-                      <img src="" alt="Prerolls Sativa 7">
-                    </div></div>
-                    <div class="product-body">
-                      <h3 class="product-title">Sativa Preroll 07</h3>
-                      <div class="product-meta"><span class="product-pill">Sativa</span><span>0.75g</span></div>
-                    </div>
-                  </article>
-
-                  <article class="product-card product-card--products">
-                    <div class="product-media"><div class="product-media-inner">
-                      <img src="" alt="Prerolls Sativa 8">
-                    </div></div>
-                    <div class="product-body">
-                      <h3 class="product-title">Sativa Preroll 08</h3>
-                      <div class="product-meta"><span class="product-pill">Sativa</span><span>0.75g</span></div>
-                    </div>
-                  </article> -->
+            <!-- ===================== PREROLLS ===================== -->
+            <section
+              class="tab-panel is-active"
+              id="tab-prerolls"
+              role="tabpanel"
+            >
+              <div class="panel-head" id="prerolls">
+                <div>
+                  <div class="panel-eyebrow">Category</div>
+                  <h2 class="panel-title">Prerolls</h2>
                 </div>
               </div>
-            </div>
 
-            <!-- ===================== PREROLLS: HYBRID ===================== -->
-            <div class="subtab-panel" id="prerolls-hybrid">
-              <div class="product-grid product-grid-8">
-                <div class="product-card-block">
-                  <article class="product-card product-card--products">
-                    <div class="product-media"><div class="product-media-inner">
-                      <img src="./Assets/images/PreRolls/preroll packet 1 hybrid.png" alt="Prerolls Hybrid 1">
-                    </div></div>
-                    <div class="product-body">
-                      <h3 class="product-title">Hybrid Preroll 3x2 Gram</h3>
-                      <div class="product-meta"><span class="product-pill">Alien Milk</span><span>Hybrid</span></div>
-                    </div>
-                  </article>
+              <div class="subtabs" role="tablist" aria-label="Prerolls Types">
+                <button
+                  class="subtab-btn is-active"
+                  role="tab"
+                  aria-selected="true"
+                  data-subtab="prerolls-sativa"
+                >
+                  Sativa
+                </button>
+                <button
+                  class="subtab-btn"
+                  role="tab"
+                  aria-selected="false"
+                  data-subtab="prerolls-hybrid"
+                >
+                  Hybrid
+                </button>
+                <button
+                  class="subtab-btn"
+                  role="tab"
+                  aria-selected="false"
+                  data-subtab="prerolls-indica"
+                >
+                  Indica
+                </button>
+              </div>
 
-                  <article class="product-card product-card--products">
-                    <div class="product-media"><div class="product-media-inner">
-                      <img src="./Assets/images/PreRolls/prerolls hybrid box 3.png" alt="Prerolls Hybrid 2">
-                    </div></div>
-                    <div class="product-body">
-                      <h3 class="product-title">PreRolls Box 10 Count</h3>
-                      <div class="product-meta"><span class="product-pill">Alien Milk</span><span>2gram</span></div>
-                    </div>
-                  </article>
+              <!-- ===================== PREROLLS: SATIVA ===================== -->
+              <div class="subtab-panel is-active" id="prerolls-sativa">
+                <div class="product-grid product-grid-8">
+                  <div class="product-card-block">
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/PreRolls/preroll packet 1 sativa.png"
+                            alt="Prerolls Sativa 1"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Sativa Preroll 3x2 Gram</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Durban Poison</span
+                          ><span>Sativa</span>
+                        </div>
+                      </div>
+                    </article>
 
-                  <article class="product-card product-card--products">
-                    <div class="product-media"><div class="product-media-inner">
-                      <img src="./Assets/images/PreRolls/Prerolls Box 10 hybrid.png" alt="Prerolls Hybrid 3">
-                    </div></div>
-                    <div class="product-body">
-                      <h3 class="product-title">PreRolls Box 10 Count with Pouch</h3>
-                      <div class="product-meta"><span class="product-pill">Alien Milk</span><span>2gram</span></div>
-                    </div>
-                  </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/PreRolls/preroll packet 2 sativa.png"
+                            alt="Prerolls Sativa 2"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Sativa Preroll 3x2 Gram</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Forbidden Fruit</span
+                          ><span>Sativa</span>
+                        </div>
+                      </div>
+                    </article>
 
-                  <!-- <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Prerolls Hybrid 4"><div class="product-media-placeholder">Add image<br>Prerolls Hybrid 4</div></div></div><div class="product-body"><h3 class="product-title">Hybrid Preroll 04</h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>0.75g</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Prerolls Hybrid 5"><div class="product-media-placeholder">Add image<br>Prerolls Hybrid 5</div></div></div><div class="product-body"><h3 class="product-title">Hybrid Preroll 05</h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>0.75g</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Prerolls Hybrid 6"><div class="product-media-placeholder">Add image<br>Prerolls Hybrid 6</div></div></div><div class="product-body"><h3 class="product-title">Hybrid Preroll 06</h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>0.75g</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Prerolls Hybrid 7"><div class="product-media-placeholder">Add image<br>Prerolls Hybrid 7</div></div></div><div class="product-body"><h3 class="product-title">Hybrid Preroll 07</h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>0.75g</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Prerolls Hybrid 8"><div class="product-media-placeholder">Add image<br>Prerolls Hybrid 8</div></div></div><div class="product-body"><h3 class="product-title">Hybrid Preroll 08</h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>0.75g</span></div></div></article> -->
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/PreRolls/prerolls box  sativa.png"
+                            alt="Prerolls Sativa 3"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          PreRolls Box 10 Count with Pouch
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Durban Poison</span
+                          ><span>2gram</span>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/PreRolls/prerolls box sativa 2.png"
+                            alt="Prerolls Sativa 4"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          PreRolls Box 10 Count with Pouch
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Forbidden Fruit</span
+                          ><span>2gram</span>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/PreRolls/prerollsbox satva 3.png"
+                            alt="Prerolls Sativa 5"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">PreRolls Box 10 Count</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Forbidden Fruit</span
+                          ><span>2gram</span>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/PreRolls/prerolls sativa box 3.png"
+                            alt="Prerolls Sativa 6"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">PreRolls Box 10 Count</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Durban Poison</span
+                          ><span>2gram</span>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/PreRolls/1count jar sativa.png"
+                            alt="Prerolls Sativa 7"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">1 Count Preroll Jar</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Durban Poison</span
+                          ><span></span>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/PreRolls/Prerolls with doobies sativa 2.png"
+                            alt="Prerolls Sativa 8"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          PreRolls Box 20 Count with Doobies
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Forbidden Fruit</span
+                          ><span>1.5 Gram</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/PreRolls/Prerolls with doobies sativa.png"
+                            alt="Prerolls Sativa 8"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          PreRolls Box 20 Count with Doobies
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Durban Poison</span
+                          ><span>1.5 Gram</span>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <!-- ===================== PREROLLS: INDICA ===================== -->
-            <div class="subtab-panel" id="prerolls-indica">
-              <div class="product-grid product-grid-8">
-                <div class="product-card-block">
-                  <article class="product-card product-card--products">
-                    <div class="product-media"><div class="product-media-inner">
-                      <img src="./Assets/images/PreRolls/preroll packet 1 indica.png" alt="Prerolls Indica 1">
-                    </div></div>
-                    <div class="product-body">
-                      <h3 class="product-title">Indica Preroll 3x2 Gram</h3>
-                      <div class="product-meta"><span class="product-pill">Divorce Cake</span><span>Indica</span></div>
-                    </div>
-                  </article>
+              <!-- ===================== PREROLLS: HYBRID ===================== -->
+              <div class="subtab-panel" id="prerolls-hybrid">
+                <div class="product-grid product-grid-8">
+                  <div class="product-card-block">
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/PreRolls/preroll packet 1 hybrid.png"
+                            alt="Prerolls Hybrid 1"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Hybrid Preroll 3x2 Gram</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Alien Milk</span
+                          ><span>Hybrid</span>
+                        </div>
+                      </div>
+                    </article>
 
-                  <article class="product-card product-card--products">
-                    <div class="product-media"><div class="product-media-inner">
-                      <img src="./Assets/images/PreRolls/preroll packet 2 indica.png" alt="Prerolls Indica 2">
-                    </div></div>
-                    <div class="product-body">
-                      <h3 class="product-title">Indica Preroll 3x2 Gram</h3>
-                      <div class="product-meta"><span class="product-pill">Gorilla Breath</span><span>Indica</span></div>
-                    </div>
-                  </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/PreRolls/prerolls hybrid box 3.png"
+                            alt="Prerolls Hybrid 2"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">PreRolls Box 10 Count</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Alien Milk</span
+                          ><span>2gram</span>
+                        </div>
+                      </div>
+                    </article>
 
-                  <article class="product-card product-card--products">
-                    <div class="product-media"><div class="product-media-inner">
-                      <img src="./Assets/images/PreRolls/prerollls indica box 3.png" alt="Prerolls Indica 3">
-                    </div></div>
-                    <div class="product-body">
-                      <h3 class="product-title">PreRolls Box 10 Count</h3>
-                      <div class="product-meta"><span class="product-pill">Divorce Cake</span><span>2gram</span></div>
-                    </div>
-                  </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/PreRolls/Prerolls Box 10 hybrid.png"
+                            alt="Prerolls Hybrid 3"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          PreRolls Box 10 Count with Pouch
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Alien Milk</span
+                          ><span>2gram</span>
+                        </div>
+                      </div>
+                    </article>
 
-                  <article class="product-card product-card--products">
-                    <div class="product-media"><div class="product-media-inner">
-                      <img src="./Assets/images/PreRolls/prerolls box indica 2.png" alt="Prerolls Indica 4">
-                    </div></div>
-                    <div class="product-body">
-                      <h3 class="product-title">PreRolls Box 10 Count with Pouch</h3>
-                      <div class="product-meta"><span class="product-pill">Gorilla Breath</span><span>2gram</span></div>
-                    </div>
-                  </article>
-
-                  <article class="product-card product-card--products">
-                    <div class="product-media"><div class="product-media-inner">
-                      <img src="./Assets/images/PreRolls/prerolls box indica 4.png" alt="Prerolls Indica 5">
-                    </div></div>
-                    <div class="product-body">
-                      <h3 class="product-title">PreRolls Box 10 Count</h3>
-                      <div class="product-meta"><span class="product-pill">Gorilla Breath</span><span>2gram</span></div>
-                    </div>
-                  </article>
-
-                  <article class="product-card product-card--products">
-                    <div class="product-media"><div class="product-media-inner">
-                      <img src="./Assets/images/PreRolls/prerolls box indica.png" alt="Prerolls Indica 6">
-                    </div></div>
-                    <div class="product-body">
-                      <h3 class="product-title">PreRolls Box 10 Count with Pouch</h3>
-                      <div class="product-meta"><span class="product-pill">Divorce Cake</span><span>2gram</span></div>
-                    </div>
-                  </article>
-
-                  <!-- <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Prerolls Indica 7"><div class="product-media-placeholder">Add image<br>Prerolls Indica 7</div></div></div><div class="product-body"><h3 class="product-title">Indica Preroll 07</h3><div class="product-meta"><span class="product-pill">Indica</span><span>0.75g</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Prerolls Indica 8"><div class="product-media-placeholder">Add image<br>Prerolls Indica 8</div></div></div><div class="product-body"><h3 class="product-title">Indica Preroll 08</h3><div class="product-meta"><span class="product-pill">Indica</span><span>0.75g</span></div></div></article> -->
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/PreRolls/1count jar hybrid.png"
+                            alt="Prerolls Hybrid 4"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">1 Count PreRoll Jar</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Alien Milk</span
+                          ><span>Hybrid</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/PreRolls/Prerolls with doobies hybrid.png"
+                            alt="Prerolls Hybrid 5"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          PreRolls Box 10 Count with Doobies
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Alien Milk</span
+                          ><span>1.5g</span>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
                 </div>
               </div>
-            </div>
-          </section>
 
-          <!-- ===================== GUMMIES ===================== -->
-          <section class="tab-panel" id="tab-gummies" role="tabpanel">
-            <div class="panel-head" id="gummies">
-              <div>
-                <div class="panel-eyebrow">Category</div>
-                <h2 class="panel-title">Gummies</h2>
-                <p class="panel-desc">Browse Gummies by type. Each type shows 8 products.</p>
+              <!-- ===================== PREROLLS: INDICA ===================== -->
+              <div class="subtab-panel" id="prerolls-indica">
+                <div class="product-grid product-grid-8">
+                  <div class="product-card-block">
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/PreRolls/preroll packet 1 indica.png"
+                            alt="Prerolls Indica 1"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Indica Preroll 3x2 Gram</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Divorce Cake</span
+                          ><span>Indica</span>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/PreRolls/preroll packet 2 indica.png"
+                            alt="Prerolls Indica 2"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Indica Preroll 3x2 Gram</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Gorilla Breath</span
+                          ><span>Indica</span>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/PreRolls/prerollls indica box 3.png"
+                            alt="Prerolls Indica 3"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">PreRolls Box 10 Count</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Divorce Cake</span
+                          ><span>2gram</span>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/PreRolls/prerolls box indica 2.png"
+                            alt="Prerolls Indica 4"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          PreRolls Box 10 Count with Pouch
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Gorilla Breath</span
+                          ><span>2gram</span>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/PreRolls/prerolls box indica 4.png"
+                            alt="Prerolls Indica 5"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">PreRolls Box 10 Count</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Gorilla Breath</span
+                          ><span>2gram</span>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/PreRolls/prerolls box indica.png"
+                            alt="Prerolls Indica 6"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          PreRolls Box 10 Count with Pouch
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Divorce Cake</span
+                          ><span>2gram</span>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/PreRolls/1count jar indica.png"
+                            alt="Prerolls Indica 7"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          1 Count Preroll Jar Indica
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Divorce Cake</span
+                          ><span>Indica</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/PreRolls/Prerolls with doobies  indica 2.png"
+                            alt="Prerolls Indica 8"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          PreRolls Box 10 Count with Doobies
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Gorilla Breath</span
+                          ><span>1.5g</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/PreRolls/Prerolls with doobies indica.png"
+                            alt="Prerolls Indica 8"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          PreRolls Box 10 Count with Doobies
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Divorce Cake</span
+                          ><span>1.5g</span>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
               </div>
-            </div>
+            </section>
 
-            <div class="subtabs" role="tablist" aria-label="Gummies Types">
-              <button class="subtab-btn is-active" role="tab" aria-selected="true" data-subtab="gummies-sativa">Sativa</button>
-              <button class="subtab-btn" role="tab" aria-selected="false" data-subtab="gummies-hybrid">Hybrid</button>
-              <button class="subtab-btn" role="tab" aria-selected="false" data-subtab="gummies-indica">Indica</button>
-            </div>
+            <!-- ===================== GUMMIES ===================== -->
+            <section class="tab-panel" id="tab-gummies" role="tabpanel">
+              <div class="panel-head" id="gummies">
+                <div>
+                  <div class="panel-eyebrow">Category</div>
+                  <h2 class="panel-title">Gummies</h2>
+                  <p class="panel-desc">Browse Gummies by type</p>
+                </div>
+              </div>
 
-            <div class="subtab-panel is-active" id="gummies-sativa">
-              <div class="product-grid product-grid-8">
-                <div class="product-card-block">
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Gummies/Gummies Indica Box 3.png" alt="Durban Poison Gummies (Sativa)"></div></div><div class="product-body"><h3 class="product-title">Gummies 2x500 With Pouch 25</h3><div class="product-meta"><span class="product-pill">Durban Poison</span><span>2×500 mg</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="/Assets/images/Gummies/Gummies Sativa 2.png" alt="Forbidden Fruit Gummies (Sativa)"></div></div><div class="product-body"><h3 class="product-title">Gummies 2x500 Pouch</h3><div class="product-meta"><span class="product-pill">Durban Poison</span><span>2×500 mg</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Gummies/Gummies Sativa 3.png" alt="Jack Herer Gummies (Sativa)"></div></div><div class="product-body"><h3 class="product-title">Gummies 2x500 Pouch</h3><div class="product-meta"><span class="product-pill">Forbidden Fruit</span><span>2×500 mg</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Gummies/Gummies Sativa box.png" alt="Gummies Sativa 4"></div></div><div class="product-body"><h3 class="product-title">Gummie 2x500 25 Count Box</h3><div class="product-meta"><span class="product-pill">Durban Poison</span><span>2×500 mg</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Gummies/Gummies Sativa.png" alt="Gummies Sativa 5"></div></div><div class="product-body"><h3 class="product-title">Gummies 2x500 Pouch</h3><div class="product-meta"><span class="product-pill">Jack Herer</span><span>2×500 mg</span></div></div></article>
-                  <!-- <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Gummies Sativa 6"></div></div><div class="product-body"><h3 class="product-title">Sativa Gummy 06</h3><div class="product-meta"><span class="product-pill">Sativa</span><span>2×500 mg</span></div></div></article>
+              <div class="subtabs" role="tablist" aria-label="Gummies Types">
+                <button
+                  class="subtab-btn is-active"
+                  role="tab"
+                  aria-selected="true"
+                  data-subtab="gummies-sativa"
+                >
+                  Sativa
+                </button>
+                <button
+                  class="subtab-btn"
+                  role="tab"
+                  aria-selected="false"
+                  data-subtab="gummies-hybrid"
+                >
+                  Hybrid
+                </button>
+                <button
+                  class="subtab-btn"
+                  role="tab"
+                  aria-selected="false"
+                  data-subtab="gummies-indica"
+                >
+                  Indica
+                </button>
+              </div>
+
+              <div class="subtab-panel is-active" id="gummies-sativa">
+                <div class="product-grid product-grid-8">
+                  <div class="product-card-block">
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Gummies/Gummies Indica Box 3.png"
+                            alt="Durban Poison Gummies (Sativa)"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          Gummies 2x500 With Pouch 25
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Durban Poison</span
+                          ><span>2×500 mg</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="/Assets/images/Gummies/Gummies Sativa 2.png"
+                            alt="Forbidden Fruit Gummies (Sativa)"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Gummies 2x500 Pouch</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Durban Poison</span
+                          ><span>2×500 mg</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Gummies/Gummies Sativa 3.png"
+                            alt="Jack Herer Gummies (Sativa)"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Gummies 2x500 Pouch</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Forbidden Fruit</span
+                          ><span>2×500 mg</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Gummies/Gummies Sativa box.png"
+                            alt="Gummies Sativa 4"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Gummie 2x500 25 Count Box</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Durban Poison</span
+                          ><span>2×500 mg</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Gummies/Gummies Sativa.png"
+                            alt="Gummies Sativa 5"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Gummies 2x500 Pouch</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Jack Herer</span
+                          ><span>2×500 mg</span>
+                        </div>
+                      </div>
+                    </article>
+                    <!-- <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Gummies Sativa 6"></div></div><div class="product-body"><h3 class="product-title">Sativa Gummy 06</h3><div class="product-meta"><span class="product-pill">Sativa</span><span>2×500 mg</span></div></div></article>
                   <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Gummies Sativa 7"></div></div><div class="product-body"><h3 class="product-title">Sativa Gummy 07</h3><div class="product-meta"><span class="product-pill">Sativa</span><span>2×500 mg</span></div></div></article>
                   <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Gummies Sativa 8"></div></div><div class="product-body"><h3 class="product-title">Sativa Gummy 08</h3><div class="product-meta"><span class="product-pill">Sativa</span><span>2×500 mg</span></div></div></article> -->
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="subtab-panel" id="gummies-hybrid">
-              <div class="product-grid product-grid-8">
-                <div class="product-card-block">
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Gummies/Gummies Hybrid 2.png" alt="Alien Milk Gummies (Hybrid)"></div></div><div class="product-body"><h3 class="product-title">Gummies 2x500 Pouch</h3><div class="product-meta"><span class="product-pill">Alien Milk</span><span>2×500 mg</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Gummies/Gummies Hybrid box 2.png" alt="Gary Payton Gummies (Hybrid)"></div></div><div class="product-body"><h3 class="product-title">Gummies 2x500 With Pouch 25 Count</h3><div class="product-meta"><span class="product-pill">Alien Milk</span><span>2×500 mg</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Gummies/Gummies Hybrid box 3.png" alt="Gummies Hybrid 3"></div></div><div class="product-body"><h3 class="product-title">Gummies 2x500 With Pouch 10 Count</h3><div class="product-meta"><span class="product-pill">Alien Milk</span><span>2×500 mg</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Gummies/Gummies hybrid box.png" alt="Gummies Hybrid 4"></div></div><div class="product-body"><h3 class="product-title">Gummies 2x500 25 Count Box</h3><div class="product-meta"><span class="product-pill">Alien Milk</span><span>2×500 mg</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Gummies/Gummies Hybrid.png" alt="Gummies Hybrid 5"></div></div><div class="product-body"><h3 class="product-title">Gummies 2x500 Pouch</h3><div class="product-meta"><span class="product-pill">Gary Pathon</span><span>2×500 mg</span></div></div></article>
-                  <!-- <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Gummies Hybrid 6"></div></div><div class="product-body"><h3 class="product-title">Hybrid Gummy 06</h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>2×500 mg</span></div></div></article> -->
-                  <!-- <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Gummies Hybrid 7"></div></div><div class="product-body"><h3 class="product-title">Hybrid Gummy 07</h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>2×500 mg</span></div></div></article> -->
-                  <!-- <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Gummies Hybrid 8"></div></div><div class="product-body"><h3 class="product-title">Hybrid Gummy 08</h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>2×500 mg</span></div></div></article> -->
+              <div class="subtab-panel" id="gummies-hybrid">
+                <div class="product-grid product-grid-8">
+                  <div class="product-card-block">
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Gummies/Gummies Hybrid 2.png"
+                            alt="Alien Milk Gummies (Hybrid)"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Gummies 2x500 Pouch</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Alien Milk</span
+                          ><span>2×500 mg</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Gummies/Gummies Hybrid box 2.png"
+                            alt="Gary Payton Gummies (Hybrid)"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          Gummies 2x500 With Pouch 25 Count
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Alien Milk</span
+                          ><span>2×500 mg</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Gummies/Gummies Hybrid box 3.png"
+                            alt="Gummies Hybrid 3"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          Gummies 2x500 With Pouch 10 Count
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Alien Milk</span
+                          ><span>2×500 mg</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Gummies/Gummies hybrid box.png"
+                            alt="Gummies Hybrid 4"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          Gummies 2x500 25 Count Box
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Alien Milk</span
+                          ><span>2×500 mg</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Gummies/Gummies Hybrid.png"
+                            alt="Gummies Hybrid 5"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Gummies 2x500 Pouch</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Gary Pathon</span
+                          ><span>2×500 mg</span>
+                        </div>
+                      </div>
+                    </article>
+                    <!-- <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Gummies Hybrid 6"></div></div><div class="product-body"><h3 class="product-title">Hybrid Gummy 06</h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>2×500 mg</span></div></div></article> -->
+                    <!-- <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Gummies Hybrid 7"></div></div><div class="product-body"><h3 class="product-title">Hybrid Gummy 07</h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>2×500 mg</span></div></div></article> -->
+                    <!-- <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Gummies Hybrid 8"></div></div><div class="product-body"><h3 class="product-title">Hybrid Gummy 08</h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>2×500 mg</span></div></div></article> -->
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="subtab-panel" id="gummies-indica">
-              <div class="product-grid product-grid-8">
-                <div class="product-card-block">
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Gummies/Gummies Indica box 2.png" alt="Divorce Cake Gummies (Indica)"></div></div><div class="product-body"><h3 class="product-title">Gummies 2x500 25 Count with Pouch</h3><div class="product-meta"><span class="product-pill">Divorce Cake</span><span>2×500 mg</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Gummies/Gummies Indica box.png" alt="Gorilla Breath Gummies (Indica)"></div></div><div class="product-body"><h3 class="product-title">Gummies 2x500 25 Count Box</h3><div class="product-meta"><span class="product-pill">Divorce Cake</span><span>2×500 mg</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Gummies/Gummies Indica.png" alt="Gummies Indica 3"></div></div><div class="product-body"><h3 class="product-title">Gummies 2x500 Pouch</h3><div class="product-meta"><span class="product-pill">Divorce Cake</span><span>2×500 mg</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Gummies/Gummies Indica2.png" alt="Gummies Indica 4"></div></div><div class="product-body"><h3 class="product-title">Gummies 2x500 Pouch</h3><div class="product-meta"><span class="product-pill">Gorilla Breath</span><span>2×500 mg</span></div></div></article>
-                  <!-- <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Gummies Indica 5"></div></div><div class="product-body"><h3 class="product-title">Indica Gummy 05</h3><div class="product-meta"><span class="product-pill">Indica</span><span>2×500 mg</span></div></div></article> -->
-                  <!-- <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Gummies Indica 6"></div></div><div class="product-body"><h3 class="product-title">Indica Gummy 06</h3><div class="product-meta"><span class="product-pill">Indica</span><span>2×500 mg</span></div></div></article> -->
-                  <!-- <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Gummies Indica 7"></div></div><div class="product-body"><h3 class="product-title">Indica Gummy 07</h3><div class="product-meta"><span class="product-pill">Indica</span><span>2×500 mg</span></div></div></article> -->
-                  <!-- <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Gummies Indica 8"></div></div><div class="product-body"><h3 class="product-title">Indica Gummy 08</h3><div class="product-meta"><span class="product-pill">Indica</span><span>2×500 mg</span></div></div></article> -->
+              <div class="subtab-panel" id="gummies-indica">
+                <div class="product-grid product-grid-8">
+                  <div class="product-card-block">
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Gummies/Gummies Indica box 2.png"
+                            alt="Divorce Cake Gummies (Indica)"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          Gummies 2x500 25 Count with Pouch
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Divorce Cake</span
+                          ><span>2×500 mg</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Gummies/Gummies Indica box.png"
+                            alt="Gorilla Breath Gummies (Indica)"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          Gummies 2x500 25 Count Box
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Divorce Cake</span
+                          ><span>2×500 mg</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Gummies/Gummies Indica.png"
+                            alt="Gummies Indica 3"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Gummies 2x500 Pouch</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Divorce Cake</span
+                          ><span>2×500 mg</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Gummies/Gummies Indica2.png"
+                            alt="Gummies Indica 4"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Gummies 2x500 Pouch</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Gorilla Breath</span
+                          ><span>2×500 mg</span>
+                        </div>
+                      </div>
+                    </article>
+                    <!-- <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Gummies Indica 5"></div></div><div class="product-body"><h3 class="product-title">Indica Gummy 05</h3><div class="product-meta"><span class="product-pill">Indica</span><span>2×500 mg</span></div></div></article> -->
+                    <!-- <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Gummies Indica 6"></div></div><div class="product-body"><h3 class="product-title">Indica Gummy 06</h3><div class="product-meta"><span class="product-pill">Indica</span><span>2×500 mg</span></div></div></article> -->
+                    <!-- <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Gummies Indica 7"></div></div><div class="product-body"><h3 class="product-title">Indica Gummy 07</h3><div class="product-meta"><span class="product-pill">Indica</span><span>2×500 mg</span></div></div></article> -->
+                    <!-- <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Gummies Indica 8"></div></div><div class="product-body"><h3 class="product-title">Indica Gummy 08</h3><div class="product-meta"><span class="product-pill">Indica</span><span>2×500 mg</span></div></div></article> -->
+                  </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
 
-          <!-- ===================== KEIF ===================== -->
-          <section class="tab-panel" id="tab-keif" role="tabpanel">
-            <div class="panel-head" id="keif">
-              <div>
-                <div class="panel-eyebrow">Category</div>
-                <h2 class="panel-title">Keif Pouches</h2>
-                <p class="panel-desc">Browse Keif Pouches by type. Each type shows 8 products.</p>
-              </div>
-            </div>
-
-            <div class="subtabs" role="tablist" aria-label="Keif Types">
-              <button class="subtab-btn is-active" role="tab" aria-selected="true" data-subtab="keif-sativa">Sativa</button>
-              <button class="subtab-btn" role="tab" aria-selected="false" data-subtab="keif-hybrid">Hybrid</button>
-              <button class="subtab-btn" role="tab" aria-selected="false" data-subtab="keif-indica">Indica</button>
-            </div>
-
-            <div class="subtab-panel is-active" id="keif-sativa">
-              <div class="product-grid product-grid-8">
-                <div class="product-card-block">
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Keif Pouche/keif box sativa.png" alt="Keif Sativa 1"></div></div><div class="product-body"><h3 class="product-title">Keif Box 2Gram 10 Count</h3><div class="product-meta"><span class="product-pill">Sativa</span><span>Box</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Keif Pouche/keif packet sativa.png" alt="Keif Sativa 2"></div></div><div class="product-body"><h3 class="product-title">Keif Packet 2x2 Gram</h3><div class="product-meta"><span class="product-pill">Sativa</span><span>Pouch</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Keif Pouche/keif pouch sativa.png" alt="Keif Sativa 3"></div></div><div class="product-body"><h3 class="product-title">Keif Box 2Gram 10 Count with Keif Packet 2x2 Gram </h3><div class="product-meta"><span class="product-pill">Sativa</span><span>Pouch</span></div></div></article>
-          
+            <!-- ===================== KEIF ===================== -->
+            <section class="tab-panel" id="tab-keif" role="tabpanel">
+              <div class="panel-head" id="keif">
+                <div>
+                  <div class="panel-eyebrow">Category</div>
+                  <h2 class="panel-title">Keif Pouches</h2>
+                  <p class="panel-desc">Browse Keif Pouches by type</p>
                 </div>
               </div>
-            </div>
 
-            <div class="subtab-panel" id="keif-hybrid">
-              <div class="product-grid product-grid-8">
-                <div class="product-card-block">
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Keif Pouche/keif box hybrid.png" alt="Keif Hybrid 1"></div></div><div class="product-body"><h3 class="product-title">Keif Box 2Gram 10 Count</h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>Box</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Keif Pouche/keif packet hybrid.png" alt="Keif Hybrid 2"></div></div><div class="product-body"><h3 class="product-title">Keif Packet 2x2 Gram</h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>Pouch</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Keif Pouche/keif pouch hybrid.png" alt="Keif Hybrid 3"></div></div><div class="product-body"><h3 class="product-title">Keif Box 2Gram 10 Count with Keif Packet 2x2 Gram </h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>Box</span></div></div></article>
+              <div class="subtabs" role="tablist" aria-label="Keif Types">
+                <button
+                  class="subtab-btn is-active"
+                  role="tab"
+                  aria-selected="true"
+                  data-subtab="keif-sativa"
+                >
+                  Sativa
+                </button>
+                <button
+                  class="subtab-btn"
+                  role="tab"
+                  aria-selected="false"
+                  data-subtab="keif-hybrid"
+                >
+                  Hybrid
+                </button>
+                <button
+                  class="subtab-btn"
+                  role="tab"
+                  aria-selected="false"
+                  data-subtab="keif-indica"
+                >
+                  Indica
+                </button>
+              </div>
+
+              <div class="subtab-panel is-active" id="keif-sativa">
+                <div class="product-grid product-grid-8">
+                  <div class="product-card-block">
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Keif Pouche/keif box sativa.png"
+                            alt="Keif Sativa 1"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Keif Box 2Gram 10 Count</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Sativa</span
+                          ><span>Box</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Keif Pouche/keif packet sativa.png"
+                            alt="Keif Sativa 2"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Keif Packet 2x2 Gram</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Sativa</span
+                          ><span>Pouch</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Keif Pouche/keif pouch sativa.png"
+                            alt="Keif Sativa 3"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          Keif Box 2Gram 10 Count with Keif Packet 2x2 Gram
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Sativa</span
+                          ><span>Pouch</span>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="subtab-panel" id="keif-indica">
-              <div class="product-grid product-grid-8">
-                <div class="product-card-block">
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Keif Pouche/keif pouch indica.png" alt="Keif Indica 1"></div></div><div class="product-body"><h3 class="product-title">Keif Box 2Gram 10 Count with Keif Packet 2x2 Gram </h3><div class="product-meta"><span class="product-pill">Indica</span><span>Box</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Keif Pouche/keif box indica.png" alt="Keif Indica 2"></div></div><div class="product-body"><h3 class="product-title">Keif Box 2Gram 10 Count</h3><div class="product-meta"><span class="product-pill">Indica</span><span>Box</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Keif Pouche/keif packet indica.png" alt="Keif Indica 3"></div></div><div class="product-body"><h3 class="product-title">Keif Packet 2x2 Gram</h3><div class="product-meta"><span class="product-pill">Indica</span><span>Pouch</span></div></div></article>
+              <div class="subtab-panel" id="keif-hybrid">
+                <div class="product-grid product-grid-8">
+                  <div class="product-card-block">
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Keif Pouche/keif box hybrid.png"
+                            alt="Keif Hybrid 1"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Keif Box 2Gram 10 Count</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Hybrid</span
+                          ><span>Box</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Keif Pouche/keif packet hybrid.png"
+                            alt="Keif Hybrid 2"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Keif Packet 2x2 Gram</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Hybrid</span
+                          ><span>Pouch</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Keif Pouche/keif pouch hybrid.png"
+                            alt="Keif Hybrid 3"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          Keif Box 2Gram 10 Count with Keif Packet 2x2 Gram
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Hybrid</span
+                          ><span>Box</span>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
                 </div>
               </div>
-            </div>
-          </section>
 
-          <!-- ===================== DONUTS ===================== -->
-          <section class="tab-panel" id="tab-donuts" role="tabpanel">
-            <div class="panel-head" id="donuts">
-              <div>
-                <div class="panel-eyebrow">Category</div>
-                <h2 class="panel-title">Donuts</h2>
-                <p class="panel-desc">Browse Donuts by type. Each type shows 8 products.</p>
-              </div>
-            </div>
-
-            <div class="subtabs" role="tablist" aria-label="Donuts Types">
-              <button class="subtab-btn is-active" role="tab" aria-selected="true" data-subtab="donuts-sativa">Sativa</button>
-              <button class="subtab-btn" role="tab" aria-selected="false" data-subtab="donuts-hybrid">Hybrid</button>
-              <button class="subtab-btn" role="tab" aria-selected="false" data-subtab="donuts-indica">Indica</button>
-            </div>
-
-            <div class="subtab-panel is-active" id="donuts-sativa">
-              <div class="product-grid product-grid-8">
-                <div class="product-card-block">
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Donuts/donut hybrid sativa.png" alt="Donuts Sativa 1"></div></div><div class="product-body"><h3 class="product-title">Donut Packet 2 count 2.5Gram</h3><div class="product-meta"><span class="product-pill">Sativa</span><span>Pouch</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Donuts/donut pouch sativa.png" alt="Donuts Sativa 2"></div></div><div class="product-body"><h3 class="product-title">Donut 10 Count Box 2.5Gram with Pouch</h3><div class="product-meta"><span class="product-pill">Sativa</span><span>Box</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Donuts/donut sativa box.png" alt="Donuts Sativa 3"></div></div><div class="product-body"><h3 class="product-title">Donut 10 Count Box 2.5Gram</h3><div class="product-meta"><span class="product-pill">Sativa</span><span>Box</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Donuts Sativa 4"></div></div><div class="product-body"><h3 class="product-title">Sativa Donut 04</h3><div class="product-meta"><span class="product-pill">Sativa</span><span>Pouch</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Donuts Sativa 5"></div></div><div class="product-body"><h3 class="product-title">Sativa Donut 05</h3><div class="product-meta"><span class="product-pill">Sativa</span><span>Pouch</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Donuts Sativa 6"></div></div><div class="product-body"><h3 class="product-title">Sativa Donut 06</h3><div class="product-meta"><span class="product-pill">Sativa</span><span>Pouch</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Donuts Sativa 7"></div></div><div class="product-body"><h3 class="product-title">Sativa Donut 07</h3><div class="product-meta"><span class="product-pill">Sativa</span><span>Pouch</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Donuts Sativa 8"></div></div><div class="product-body"><h3 class="product-title">Sativa Donut 08</h3><div class="product-meta"><span class="product-pill">Sativa</span><span>Pouch</span></div></div></article>
+              <div class="subtab-panel" id="keif-indica">
+                <div class="product-grid product-grid-8">
+                  <div class="product-card-block">
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Keif Pouche/keif pouch indica.png"
+                            alt="Keif Indica 1"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          Keif Box 2Gram 10 Count with Keif Packet 2x2 Gram
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Indica</span
+                          ><span>Box</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Keif Pouche/keif box indica.png"
+                            alt="Keif Indica 2"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Keif Box 2Gram 10 Count</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Indica</span
+                          ><span>Box</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Keif Pouche/keif packet indica.png"
+                            alt="Keif Indica 3"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Keif Packet 2x2 Gram</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Indica</span
+                          ><span>Pouch</span>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
                 </div>
               </div>
-            </div>
+            </section>
 
-            <div class="subtab-panel" id="donuts-hybrid">
-              <div class="product-grid product-grid-8">
-                <div class="product-card-block">
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Donuts/donut hybrid box.png" alt="Donuts Hybrid 1"></div></div><div class="product-body"><h3 class="product-title">Donut 10 Count Box 2.5Gram</h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>box</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Donuts/donut hybrid packet.png" alt="Donuts Hybrid 2"></div></div><div class="product-body"><h3 class="product-title">Donut Packet 2 count 2.5Gram</h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>Pouch</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Donuts/donut hybrid pouch.png" alt="Donuts Hybrid 3"></div></div><div class="product-body"><h3 class="product-title">Donut 10 Count Box 2.5Gram with Pouch</h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>Box</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Donuts Hybrid 4"></div></div><div class="product-body"><h3 class="product-title">Hybrid Donut 04</h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>Pouch</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Donuts Hybrid 5"></div></div><div class="product-body"><h3 class="product-title">Hybrid Donut 05</h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>Pouch</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Donuts Hybrid 6"></div></div><div class="product-body"><h3 class="product-title">Hybrid Donut 06</h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>Pouch</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Donuts Hybrid 7"></div></div><div class="product-body"><h3 class="product-title">Hybrid Donut 07</h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>Pouch</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Donuts Hybrid 8"></div></div><div class="product-body"><h3 class="product-title">Hybrid Donut 08</h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>Pouch</span></div></div></article>
+            <!-- ===================== DONUTS ===================== -->
+            <section class="tab-panel" id="tab-donuts" role="tabpanel">
+              <div class="panel-head" id="donuts">
+                <div>
+                  <div class="panel-eyebrow">Category</div>
+                  <h2 class="panel-title">Donuts</h2>
+                  <p class="panel-desc">Browse Donuts by type</p>
                 </div>
               </div>
-            </div>
 
-            <div class="subtab-panel" id="donuts-indica">
-              <div class="product-grid product-grid-8">
-                <div class="product-card-block">
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Donuts/donut indica box.png" alt="Donuts Indica 1"></div></div><div class="product-body"><h3 class="product-title">Donut 10 Count Box 2.5Gram</h3><div class="product-meta"><span class="product-pill">Indica</span><span>Box</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Donuts/donut pouch indica.png" alt="Donuts Indica 2"></div></div><div class="product-body"><h3 class="product-title">Donut 10 Count Box 2.5Gram with Pouch</h3><div class="product-meta"><span class="product-pill">Indica</span><span>Box</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="./Assets/images/Donuts/donut indica packet.png" alt="Donuts Indica 3"></div></div><div class="product-body"><h3 class="product-title">Donut Packet 2 count 2.5Gram</h3><div class="product-meta"><span class="product-pill">Indica</span><span>Pouch</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Donuts Indica 4"></div></div><div class="product-body"><h3 class="product-title">Indica Donut 04</h3><div class="product-meta"><span class="product-pill">Indica</span><span>Pouch</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Donuts Indica 5"></div></div><div class="product-body"><h3 class="product-title">Indica Donut 05</h3><div class="product-meta"><span class="product-pill">Indica</span><span>Pouch</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Donuts Indica 6"></div></div><div class="product-body"><h3 class="product-title">Indica Donut 06</h3><div class="product-meta"><span class="product-pill">Indica</span><span>Pouch</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Donuts Indica 7"></div></div><div class="product-body"><h3 class="product-title">Indica Donut 07</h3><div class="product-meta"><span class="product-pill">Indica</span><span>Pouch</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Donuts Indica 8"></div></div><div class="product-body"><h3 class="product-title">Indica Donut 08</h3><div class="product-meta"><span class="product-pill">Indica</span><span>Pouch</span></div></div></article>
+              <div class="subtabs" role="tablist" aria-label="Donuts Types">
+                <button
+                  class="subtab-btn is-active"
+                  role="tab"
+                  aria-selected="true"
+                  data-subtab="donuts-sativa"
+                >
+                  Sativa
+                </button>
+                <button
+                  class="subtab-btn"
+                  role="tab"
+                  aria-selected="false"
+                  data-subtab="donuts-hybrid"
+                >
+                  Hybrid
+                </button>
+                <button
+                  class="subtab-btn"
+                  role="tab"
+                  aria-selected="false"
+                  data-subtab="donuts-indica"
+                >
+                  Indica
+                </button>
+              </div>
+
+              <div class="subtab-panel is-active" id="donuts-sativa">
+                <div class="product-grid product-grid-8">
+                  <div class="product-card-block">
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Donuts/donut hybrid sativa.png"
+                            alt="Donuts Sativa 1"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          Donut Packet 2 count 2.5Gram
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Sativa</span
+                          ><span>Pouch</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Donuts/donut pouch sativa.png"
+                            alt="Donuts Sativa 2"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          Donut 10 Count Box 2.5Gram with Pouch
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Sativa</span
+                          ><span>Box</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Donuts/donut sativa box.png"
+                            alt="Donuts Sativa 3"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          Donut 10 Count Box 2.5Gram
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Sativa</span
+                          ><span>Box</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img src="" alt="Donuts Sativa 4" />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Sativa Donut 04</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Sativa</span
+                          ><span>Pouch</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img src="" alt="Donuts Sativa 5" />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Sativa Donut 05</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Sativa</span
+                          ><span>Pouch</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img src="" alt="Donuts Sativa 6" />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Sativa Donut 06</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Sativa</span
+                          ><span>Pouch</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img src="" alt="Donuts Sativa 7" />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Sativa Donut 07</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Sativa</span
+                          ><span>Pouch</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img src="" alt="Donuts Sativa 8" />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Sativa Donut 08</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Sativa</span
+                          ><span>Pouch</span>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
                 </div>
               </div>
-            </div>
-          </section>
 
-          <!-- ===================== FLOWERS ===================== -->
-          <section class="tab-panel" id="tab-flowers" role="tabpanel">
-            <div class="panel-head" id="flowers">
-              <div>
-                <div class="panel-eyebrow">Category</div>
-                <h2 class="panel-title">Flowers</h2>
-                <p class="panel-desc">Browse Flowers by type. Each type shows 8 products.</p>
-              </div>
-            </div>
-
-            <div class="subtabs" role="tablist" aria-label="Flowers Types">
-              <button class="subtab-btn is-active" role="tab" aria-selected="true" data-subtab="flowers-sativa">Sativa</button>
-              <button class="subtab-btn" role="tab" aria-selected="false" data-subtab="flowers-hybrid">Hybrid</button>
-              <button class="subtab-btn" role="tab" aria-selected="false" data-subtab="flowers-indica">Indica</button>
-            </div>
-
-            <div class="subtab-panel is-active" id="flowers-sativa">
-              <div class="product-grid product-grid-8">
-                <div class="product-card-block">
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Flowers Sativa 1"><div class="product-media-placeholder">Add image<br>Flowers Sativa 1</div></div></div><div class="product-body"><h3 class="product-title">Sativa Flower 01</h3><div class="product-meta"><span class="product-pill">Sativa</span><span>3.5g</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Flowers Sativa 2"><div class="product-media-placeholder">Add image<br>Flowers Sativa 2</div></div></div><div class="product-body"><h3 class="product-title">Sativa Flower 02</h3><div class="product-meta"><span class="product-pill">Sativa</span><span>3.5g</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Flowers Sativa 3"><div class="product-media-placeholder">Add image<br>Flowers Sativa 3</div></div></div><div class="product-body"><h3 class="product-title">Sativa Flower 03</h3><div class="product-meta"><span class="product-pill">Sativa</span><span>3.5g</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Flowers Sativa 4"><div class="product-media-placeholder">Add image<br>Flowers Sativa 4</div></div></div><div class="product-body"><h3 class="product-title">Sativa Flower 04</h3><div class="product-meta"><span class="product-pill">Sativa</span><span>3.5g</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Flowers Sativa 5"><div class="product-media-placeholder">Add image<br>Flowers Sativa 5</div></div></div><div class="product-body"><h3 class="product-title">Sativa Flower 05</h3><div class="product-meta"><span class="product-pill">Sativa</span><span>3.5g</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Flowers Sativa 6"><div class="product-media-placeholder">Add image<br>Flowers Sativa 6</div></div></div><div class="product-body"><h3 class="product-title">Sativa Flower 06</h3><div class="product-meta"><span class="product-pill">Sativa</span><span>3.5g</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Flowers Sativa 7"><div class="product-media-placeholder">Add image<br>Flowers Sativa 7</div></div></div><div class="product-body"><h3 class="product-title">Sativa Flower 07</h3><div class="product-meta"><span class="product-pill">Sativa</span><span>3.5g</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Flowers Sativa 8"><div class="product-media-placeholder">Add image<br>Flowers Sativa 8</div></div></div><div class="product-body"><h3 class="product-title">Sativa Flower 08</h3><div class="product-meta"><span class="product-pill">Sativa</span><span>3.5g</span></div></div></article>
+              <div class="subtab-panel" id="donuts-hybrid">
+                <div class="product-grid product-grid-8">
+                  <div class="product-card-block">
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Donuts/donut hybrid box.png"
+                            alt="Donuts Hybrid 1"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          Donut 10 Count Box 2.5Gram
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Hybrid</span
+                          ><span>box</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Donuts/donut hybrid packet.png"
+                            alt="Donuts Hybrid 2"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          Donut Packet 2 count 2.5Gram
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Hybrid</span
+                          ><span>Pouch</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Donuts/donut hybrid pouch.png"
+                            alt="Donuts Hybrid 3"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          Donut 10 Count Box 2.5Gram with Pouch
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Hybrid</span
+                          ><span>Box</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img src="" alt="Donuts Hybrid 4" />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Hybrid Donut 04</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Hybrid</span
+                          ><span>Pouch</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img src="" alt="Donuts Hybrid 5" />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Hybrid Donut 05</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Hybrid</span
+                          ><span>Pouch</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img src="" alt="Donuts Hybrid 6" />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Hybrid Donut 06</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Hybrid</span
+                          ><span>Pouch</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img src="" alt="Donuts Hybrid 7" />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Hybrid Donut 07</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Hybrid</span
+                          ><span>Pouch</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img src="" alt="Donuts Hybrid 8" />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Hybrid Donut 08</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Hybrid</span
+                          ><span>Pouch</span>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="subtab-panel" id="flowers-hybrid">
-              <div class="product-grid product-grid-8">
-                <div class="product-card-block">
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Flowers Hybrid 1"><div class="product-media-placeholder">Add image<br>Flowers Hybrid 1</div></div></div><div class="product-body"><h3 class="product-title">Hybrid Flower 01</h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>3.5g</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Flowers Hybrid 2"><div class="product-media-placeholder">Add image<br>Flowers Hybrid 2</div></div></div><div class="product-body"><h3 class="product-title">Hybrid Flower 02</h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>3.5g</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Flowers Hybrid 3"><div class="product-media-placeholder">Add image<br>Flowers Hybrid 3</div></div></div><div class="product-body"><h3 class="product-title">Hybrid Flower 03</h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>3.5g</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Flowers Hybrid 4"><div class="product-media-placeholder">Add image<br>Flowers Hybrid 4</div></div></div><div class="product-body"><h3 class="product-title">Hybrid Flower 04</h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>3.5g</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Flowers Hybrid 5"><div class="product-media-placeholder">Add image<br>Flowers Hybrid 5</div></div></div><div class="product-body"><h3 class="product-title">Hybrid Flower 05</h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>3.5g</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Flowers Hybrid 6"><div class="product-media-placeholder">Add image<br>Flowers Hybrid 6</div></div></div><div class="product-body"><h3 class="product-title">Hybrid Flower 06</h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>3.5g</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Flowers Hybrid 7"><div class="product-media-placeholder">Add image<br>Flowers Hybrid 7</div></div></div><div class="product-body"><h3 class="product-title">Hybrid Flower 07</h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>3.5g</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Flowers Hybrid 8"><div class="product-media-placeholder">Add image<br>Flowers Hybrid 8</div></div></div><div class="product-body"><h3 class="product-title">Hybrid Flower 08</h3><div class="product-meta"><span class="product-pill">Hybrid</span><span>3.5g</span></div></div></article>
+              <div class="subtab-panel" id="donuts-indica">
+                <div class="product-grid product-grid-8">
+                  <div class="product-card-block">
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Donuts/donut indica box.png"
+                            alt="Donuts Indica 1"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          Donut 10 Count Box 2.5Gram
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Indica</span
+                          ><span>Box</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Donuts/donut pouch indica.png"
+                            alt="Donuts Indica 2"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          Donut 10 Count Box 2.5Gram with Pouch
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Indica</span
+                          ><span>Box</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Donuts/donut indica packet.png"
+                            alt="Donuts Indica 3"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          Donut Packet 2 count 2.5Gram
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Indica</span
+                          ><span>Pouch</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img src="" alt="Donuts Indica 4" />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Indica Donut 04</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Indica</span
+                          ><span>Pouch</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img src="" alt="Donuts Indica 5" />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Indica Donut 05</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Indica</span
+                          ><span>Pouch</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img src="" alt="Donuts Indica 6" />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Indica Donut 06</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Indica</span
+                          ><span>Pouch</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img src="" alt="Donuts Indica 7" />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Indica Donut 07</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Indica</span
+                          ><span>Pouch</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img src="" alt="Donuts Indica 8" />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Indica Donut 08</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Indica</span
+                          ><span>Pouch</span>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
                 </div>
               </div>
-            </div>
+            </section>
 
-            <div class="subtab-panel" id="flowers-indica">
-              <div class="product-grid product-grid-8">
-                <div class="product-card-block">
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Flowers Indica 1"><div class="product-media-placeholder">Add image<br>Flowers Indica 1</div></div></div><div class="product-body"><h3 class="product-title">Indica Flower 01</h3><div class="product-meta"><span class="product-pill">Indica</span><span>3.5g</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Flowers Indica 2"><div class="product-media-placeholder">Add image<br>Flowers Indica 2</div></div></div><div class="product-body"><h3 class="product-title">Indica Flower 02</h3><div class="product-meta"><span class="product-pill">Indica</span><span>3.5g</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Flowers Indica 3"><div class="product-media-placeholder">Add image<br>Flowers Indica 3</div></div></div><div class="product-body"><h3 class="product-title">Indica Flower 03</h3><div class="product-meta"><span class="product-pill">Indica</span><span>3.5g</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Flowers Indica 4"><div class="product-media-placeholder">Add image<br>Flowers Indica 4</div></div></div><div class="product-body"><h3 class="product-title">Indica Flower 04</h3><div class="product-meta"><span class="product-pill">Indica</span><span>3.5g</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Flowers Indica 5"><div class="product-media-placeholder">Add image<br>Flowers Indica 5</div></div></div><div class="product-body"><h3 class="product-title">Indica Flower 05</h3><div class="product-meta"><span class="product-pill">Indica</span><span>3.5g</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Flowers Indica 6"><div class="product-media-placeholder">Add image<br>Flowers Indica 6</div></div></div><div class="product-body"><h3 class="product-title">Indica Flower 06</h3><div class="product-meta"><span class="product-pill">Indica</span><span>3.5g</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Flowers Indica 7"><div class="product-media-placeholder">Add image<br>Flowers Indica 7</div></div></div><div class="product-body"><h3 class="product-title">Indica Flower 07</h3><div class="product-meta"><span class="product-pill">Indica</span><span>3.5g</span></div></div></article>
-                  <article class="product-card product-card--products"><div class="product-media"><div class="product-media-inner"><img src="" alt="Flowers Indica 8"><div class="product-media-placeholder">Add image<br>Flowers Indica 8</div></div></div><div class="product-body"><h3 class="product-title">Indica Flower 08</h3><div class="product-meta"><span class="product-pill">Indica</span><span>3.5g</span></div></div></article>
+            <!-- ===================== FLOWERS ===================== -->
+            <section class="tab-panel" id="tab-flowers" role="tabpanel">
+              <div class="panel-head" id="flowers">
+                <div>
+                  <div class="panel-eyebrow">Category</div>
+                  <h2 class="panel-title">Flowers</h2>
+                  <p class="panel-desc">Browse Flowers by type</p>
                 </div>
               </div>
-            </div>
-          </section>
 
+              <div class="subtabs" role="tablist" aria-label="Flowers Types">
+                <button
+                  class="subtab-btn is-active"
+                  role="tab"
+                  aria-selected="true"
+                  data-subtab="flowers-sativa"
+                >
+                  Sativa
+                </button>
+                <button
+                  class="subtab-btn"
+                  role="tab"
+                  aria-selected="false"
+                  data-subtab="flowers-hybrid"
+                >
+                  Hybrid
+                </button>
+                <button
+                  class="subtab-btn"
+                  role="tab"
+                  aria-selected="false"
+                  data-subtab="flowers-indica"
+                >
+                  Indica
+                </button>
+              </div>
+
+              <div class="subtab-panel is-active" id="flowers-sativa">
+                <div class="product-grid product-grid-8">
+                  <div class="product-card-block">
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Flowers/flower box sativa 2.png"
+                            alt="Flowers Sativa 1"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">28 Count Flower Box 1gram</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Forbidden Fruit</span
+                          ><span>Sativa</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Flowers/flower box sativa.png"
+                            alt="Flowers Sativa 2"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">28 Count Flower Box 1gram</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Durban Poison</span
+                          ><span>Sativa</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Flowers/flower packet sativa.png"
+                            alt="Flowers Sativa 3"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Flower 1gram packet</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Durban Poison</span
+                          ><span>Sativa</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Flowers/flower pouch sativa.png"
+                            alt="Flowers Sativa 4"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          28 Count Flower Box 1gram with Pouch
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Durban Poison</span
+                          ><span>Sativa</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img src="" alt="Flowers Sativa 5" />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Sativa Flower 05</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Sativa</span
+                          ><span>3.5g</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img src="" alt="Flowers Sativa 6" />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Sativa Flower 06</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Sativa</span
+                          ><span>3.5g</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img src="" alt="Flowers Sativa 7" />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Sativa Flower 07</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Sativa</span
+                          ><span>3.5g</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img src="" alt="Flowers Sativa 8" />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Sativa Flower 08</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Sativa</span
+                          ><span>3.5g</span>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+
+              <div class="subtab-panel" id="flowers-hybrid">
+                <div class="product-grid product-grid-8">
+                  <div class="product-card-block">
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Flowers/flower box hybrid.png"
+                            alt="Flowers Hybrid 1"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">28 Count Flower Box 1gram</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Alien Milk</span
+                          ><span>Hybrid</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Flowers/flower packet hybrid.png"
+                            alt="Flowers Hybrid 2"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Flower 1gram packet</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Alien Milk</span
+                          ><span>Hybrid</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Flowers/flower pouch hybrid.png"
+                            alt="Flowers Hybrid 3"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          28 Count Flower Box 1gram with Pouch
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Alien Milk</span
+                          ><span>Hybrid</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img src="" alt="Flowers Hybrid 4" />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Hybrid Flower 04</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Hybrid</span
+                          ><span>3.5g</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img src="" alt="Flowers Hybrid 5" />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Hybrid Flower 05</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Hybrid</span
+                          ><span>3.5g</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img src="" alt="Flowers Hybrid 6" />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Hybrid Flower 06</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Hybrid</span
+                          ><span>3.5g</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img src="" alt="Flowers Hybrid 7" />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Hybrid Flower 07</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Hybrid</span
+                          ><span>3.5g</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img src="" alt="Flowers Hybrid 8" />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Hybrid Flower 08</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Hybrid</span
+                          ><span>3.5g</span>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+
+              <div class="subtab-panel" id="flowers-indica">
+                <div class="product-grid product-grid-8">
+                  <div class="product-card-block">
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Flowers/flower box indica 2.png"
+                            alt="Flowers Indica 1"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">28 Count Flower Box 1gram</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Gorilla Breath</span
+                          ><span>Indica</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Flowers/flower box indica.png"
+                            alt="Flowers Indica 2"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">28 Count Flower Box 1gram</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Divorce Cake</span
+                          ><span>Indica</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Flowers/flower packet indica.png"
+                            alt="Flowers Indica 3"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Flower 1gram packet</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Divorce Cake</span
+                          ><span>Indica</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img
+                            src="./Assets/images/Flowers/flower pouch indicca.png"
+                            alt="Flowers Indica 4"
+                          />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">
+                          28 Count Flower Box 1gram with Pouch
+                        </h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Divorce Cake</span
+                          ><span>Indica</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img src="" alt="Flowers Indica 5" />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Indica Flower 05</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Indica</span
+                          ><span>3.5g</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img src="" alt="Flowers Indica 6" />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Indica Flower 06</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Indica</span
+                          ><span>3.5g</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img src="" alt="Flowers Indica 7" />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Indica Flower 07</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Indica</span
+                          ><span>3.5g</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="product-card product-card--products">
+                      <div class="product-media">
+                        <div class="product-media-inner">
+                          <img src="" alt="Flowers Indica 8" />
+                        </div>
+                      </div>
+                      <div class="product-body">
+                        <h3 class="product-title">Indica Flower 08</h3>
+                        <div class="product-meta">
+                          <span class="product-pill">Indica</span
+                          ><span>3.5g</span>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <script>
-    const menuToggle = document.querySelector(".menu-toggle");
-    const mobileNav = document.getElementById("mobileNav");
-    menuToggle.addEventListener("click", () => mobileNav.classList.toggle("open"));
-    mobileNav.addEventListener("click", (e) => {
-      if (e.target.tagName === "A") mobileNav.classList.remove("open");
-    });
-
-    const topTabButtons = document.querySelectorAll(".tab-btn");
-    const topPanels = document.querySelectorAll(".tab-panel");
-
-    function activateTopTab(tabId) {
-      topTabButtons.forEach(btn => {
-        const active = btn.dataset.tab === tabId;
-        btn.classList.toggle("is-active", active);
-        btn.setAttribute("aria-selected", active ? "true" : "false");
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const mobileNav = document.getElementById("mobileNav");
+      menuToggle.addEventListener("click", () =>
+        mobileNav.classList.toggle("open")
+      );
+      mobileNav.addEventListener("click", (e) => {
+        if (e.target.tagName === "A") mobileNav.classList.remove("open");
       });
-      topPanels.forEach(panel => panel.classList.toggle("is-active", panel.id === tabId));
-    }
 
-    topTabButtons.forEach(btn => btn.addEventListener("click", () => activateTopTab(btn.dataset.tab)));
+      const topTabButtons = document.querySelectorAll(".tab-btn");
+      const topPanels = document.querySelectorAll(".tab-panel");
 
-    document.querySelectorAll(".tab-panel").forEach(panel => {
-      const subBtns = panel.querySelectorAll(".subtab-btn");
-      const subPanels = panel.querySelectorAll(".subtab-panel");
-
-      if (!subBtns.length) return;
-
-      function activateSub(subId) {
-        subBtns.forEach(b => {
-          const active = b.dataset.subtab === subId;
-          b.classList.toggle("is-active", active);
-          b.setAttribute("aria-selected", active ? "true" : "false");
+      function activateTopTab(tabId) {
+        topTabButtons.forEach((btn) => {
+          const active = btn.dataset.tab === tabId;
+          btn.classList.toggle("is-active", active);
+          btn.setAttribute("aria-selected", active ? "true" : "false");
         });
-        subPanels.forEach(sp => sp.classList.toggle("is-active", sp.id === subId));
+        topPanels.forEach((panel) =>
+          panel.classList.toggle("is-active", panel.id === tabId)
+        );
       }
 
-      subBtns.forEach(b => b.addEventListener("click", () => activateSub(b.dataset.subtab)));
-    });
-  </script>
-</body>
+      topTabButtons.forEach((btn) =>
+        btn.addEventListener("click", () => activateTopTab(btn.dataset.tab))
+      );
+
+      document.querySelectorAll(".tab-panel").forEach((panel) => {
+        const subBtns = panel.querySelectorAll(".subtab-btn");
+        const subPanels = panel.querySelectorAll(".subtab-panel");
+
+        if (!subBtns.length) return;
+
+        function activateSub(subId) {
+          subBtns.forEach((b) => {
+            const active = b.dataset.subtab === subId;
+            b.classList.toggle("is-active", active);
+            b.setAttribute("aria-selected", active ? "true" : "false");
+          });
+          subPanels.forEach((sp) =>
+            sp.classList.toggle("is-active", sp.id === subId)
+          );
+        }
+
+        subBtns.forEach((b) =>
+          b.addEventListener("click", () => activateSub(b.dataset.subtab))
+        );
+      });
+    </script>
+  </body>
 </html>

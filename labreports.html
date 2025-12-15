@@ -1,215 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>7th Heaven Hemp – Lab Reports</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7th Heaven Hemp – Lab Reports</title>
 
-  <link rel="stylesheet" href="Assets/css/style.css"/>
+    <link rel="stylesheet" href="Assets/css/style.css" />
 
-   <!-- Optional Google Font -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amarna:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amarna:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
+    <style>
+      .labreports {
+        padding: 5%;
+        text-align: center;
+      }
 
-  <style>
-    .labreports{
-      padding:5%;
-      text-align:center;
-    }
+      .reports-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
 
-    .reports-grid{
-      display:grid;
-      grid-template-columns:repeat(3,minmax(0,1fr));
-      gap:18px;
-      max-width:1100px;
-      margin:0 auto;
-    }
+      @media (max-width: 900px) {
+        .reports-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 520px) {
+        .reports-grid {
+          grid-template-columns: 1fr;
+        }
+      }
 
-    @media(max-width:900px){
-      .reports-grid{grid-template-columns:repeat(2,1fr)}
-    }
-    @media(max-width:520px){
-      .reports-grid{grid-template-columns:1fr}
-    }
+      .report-item {
+        border: 0;
+        padding: 0;
+        background: none;
+        cursor: pointer;
+        border-radius: 20px;
+        overflow: hidden;
+        aspect-ratio: 4/3;
+        box-shadow: 0 14px 32px rgba(0, 0, 0, 0.16);
+      }
 
-    .report-item{
-      border:0;
-      padding:0;
-      background:none;
-      cursor:pointer;
-      border-radius:20px;
-      overflow:hidden;
-      aspect-ratio:4/3;
-      box-shadow:0 14px 32px rgba(0,0,0,.16);
-    }
+      .report-item img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+      }
 
-    .report-item img{
-      width:100%;
-      height:100%;
-      display:block;
-      object-fit:cover;
-    }
+      /* LIGHTBOX */
+      .lightbox {
+        position: fixed;
+        inset: 0;
+        display: none;
+        z-index: 99999;
+        align-items: center;
+        justify-content: center;
+      }
 
-    /* LIGHTBOX */
-    .lightbox{
-      position:fixed;
-      inset:0;
-      display:none;
-      z-index:99999;
-      align-items:center;
-      justify-content:center;
-    }
+      .lightbox.is-open {
+        display: flex;
+      }
 
-    .lightbox.is-open{display:flex}
+      .lightbox-backdrop {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.75);
+      }
 
-    .lightbox-backdrop{
-      position:absolute;
-      inset:0;
-      background:rgba(0,0,0,.75);
-    }
+      .lightbox-panel {
+        position: relative;
+        z-index: 1;
+        width: min(1000px, 92vw);
+        height: min(86vh, 760px);
+        background: #0b0b0b;
+        border-radius: 20px;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+      }
 
-    .lightbox-panel{
-      position:relative;
-      z-index:1;
-      width:min(1000px,92vw);
-      height:min(86vh,760px);
-      background:#0b0b0b;
-      border-radius:20px;
-      padding:16px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      box-shadow:0 30px 80px rgba(0,0,0,.6);
-    }
+      .lightbox-img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+        background: #0b0b0b;
+      }
 
-    .lightbox-img{
-      width:100%;
-      height:100%;
-      object-fit:contain;
-      display:block;
-      background:#0b0b0b;
-    }
+      .lightbox-close {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        border: 0;
+        background: rgba(255, 255, 255, 0.18);
+        color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+      }
 
-    .lightbox-close{
-      position:absolute;
-      top:12px;
-      right:12px;
-      width:42px;
-      height:42px;
-      border-radius:50%;
-      border:0;
-      background:rgba(255,255,255,.18);
-      color:#fff;
-      font-size:18px;
-      cursor:pointer;
-    }
+      .lightbox-close:hover {
+        background: rgba(255, 255, 255, 0.28);
+      }
+    </style>
+  </head>
 
-    .lightbox-close:hover{
-      background:rgba(255,255,255,.28);
-    }
-  </style>
-</head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="logo-area">
+          <img
+            src="./Assets/images/logomain.jpg"
+            alt="7th Heaven logo"
+            class="logo-img"
+          />
+        </a>
 
-<body>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="contact.html">Contact</a>
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="labreports.html">COA's</a>
+        </nav>
 
-<header class="site-header">
-  <div class="header-inner">
-    <a href="index.html" class="logo-area">
-      <img src="./Assets/images/logomain.jpg" alt="7th Heaven logo" class="logo-img"/>
-    </a>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <span class="menu-line"></span>
+        </button>
+      </div>
 
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="contact.html">Contact</a>
-      <a href="disclaimer.html">Disclaimer</a>
-      <a href="labreports.html">COA's</a>
-    </nav>
+      <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-inner">
+          <div class="mobile-nav-links">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="labreports.html">COA's</a>
+            <a href="disclaimer.html">Disclaimer</a>
+          </div>
+          <!-- <div class="mobile-nav-cta">
+            <button class="btn btn-outline" style="flex:1;">Find a Store</button>
+            <button class="btn btn-primary" style="flex:1;">Join the Club</button>
+          </div> -->
+        </div>
+      </div>
+    </header>
 
-    <div class="nav-cta">
-      <button class="btn btn-outline">Find Products</button>
-      <button class="btn btn-primary">Contact Us</button>
-    </div>
+    <section class="labreports">
+      <h1 style="padding-bottom: 2%" class="hero-heading">
+        7th Heaven Hemp<br />
+        <span class="hero-highlight">Our Verified Lab Reports</span>
+      </h1>
 
-    <button class="menu-toggle" aria-label="Toggle navigation">
-      <span class="menu-line"></span>
-    </button>
-  </div>
+      <div class="reports-grid">
+        <button
+          class="report-item"
+          data-full="./Assets/images/Lab Reports/Lab Reports .jpg"
+        >
+          <img src="./Assets/images/Lab Reports/Lab Reports .jpg" alt="" />
+        </button>
 
-  <div class="mobile-nav" id="mobileNav">
-    <div class="mobile-nav-inner">
-      <div class="mobile-nav-links">
-        <a href="#">Doobies</a>
-        <a href="#">Prerolls</a>
-        <a href="#">Gummies</a>
-        <a href="#">Flowers</a>
+        <button
+          class="report-item"
+          data-full="./Assets/images/Lab Reports/Lab Report 2.jpg"
+        >
+          <img src="./Assets/images/Lab Reports/Lab Report 2.jpg" alt="" />
+        </button>
+
+        <button
+          class="report-item"
+          data-full="./Assets/images/Lab Reports/Lab Report 3.jpg"
+        >
+          <img src="./Assets/images/Lab Reports/Lab Report 3.jpg" alt="" />
+        </button>
+      </div>
+    </section>
+
+    <div class="lightbox" id="lightbox">
+      <div class="lightbox-backdrop" data-close></div>
+      <div class="lightbox-panel">
+        <button class="lightbox-close" data-close>✕</button>
+        <img class="lightbox-img" id="lightboxImg" src="" alt="" />
       </div>
     </div>
-  </div>
-</header>
 
-<section class="labreports">
-  <h1 style="padding-bottom: 2%;" class="hero-heading">
-    7th Heaven Hemp<br>
-    <span class="hero-highlight">Our Verified Lab Reports</span>
-  </h1>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const mobileNav = document.getElementById("mobileNav");
 
-  <div class="reports-grid">
-    <button class="report-item" data-full="./Assets/images/Lab Reports/Lab Reports .jpg">
-      <img src="./Assets/images/Lab Reports/Lab Reports .jpg" alt="">
-    </button>
+      menuToggle.addEventListener("click", () =>
+        mobileNav.classList.toggle("open")
+      );
 
-    <button class="report-item" data-full="./Assets/images/Lab Reports/Lab Report 2.jpg">
-      <img src="./Assets/images/Lab Reports/Lab Report 2.jpg" alt="">
-    </button>
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightboxImg");
 
-    <button class="report-item" data-full="./Assets/images/Lab Reports/Lab Report 3.jpg">
-      <img src="./Assets/images/Lab Reports/Lab Report 3.jpg" alt="">
-    </button>
-  </div>
-</section>
+      document.addEventListener("click", (e) => {
+        const item = e.target.closest(".report-item");
+        if (item) {
+          lightboxImg.src = item.dataset.full;
+          lightbox.classList.add("is-open");
+          document.body.style.overflow = "hidden";
+        }
+        if (e.target.closest("[data-close]")) {
+          lightbox.classList.remove("is-open");
+          lightboxImg.src = "";
+          document.body.style.overflow = "";
+        }
+      });
 
-<div class="lightbox" id="lightbox">
-  <div class="lightbox-backdrop" data-close></div>
-  <div class="lightbox-panel">
-    <button class="lightbox-close" data-close>✕</button>
-    <img class="lightbox-img" id="lightboxImg" src="" alt="">
-  </div>
-</div>
-
-<script>
-  const menuToggle = document.querySelector(".menu-toggle");
-  const mobileNav = document.getElementById("mobileNav");
-
-  menuToggle.addEventListener("click",()=>mobileNav.classList.toggle("open"));
-
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightboxImg");
-
-  document.addEventListener("click",(e)=>{
-    const item = e.target.closest(".report-item");
-    if(item){
-      lightboxImg.src = item.dataset.full;
-      lightbox.classList.add("is-open");
-      document.body.style.overflow="hidden";
-    }
-    if(e.target.closest("[data-close]")){
-      lightbox.classList.remove("is-open");
-      lightboxImg.src="";
-      document.body.style.overflow="";
-    }
-  });
-
-  document.addEventListener("keydown",(e)=>{
-    if(e.key==="Escape"){
-      lightbox.classList.remove("is-open");
-      lightboxImg.src="";
-      document.body.style.overflow="";
-    }
-  });
-</script>
-
-</body>
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          lightbox.classList.remove("is-open");
+          lightboxImg.src = "";
+          document.body.style.overflow = "";
+        }
+      });
+    </script>
+  </body>
 </html>
